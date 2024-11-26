@@ -298,8 +298,11 @@ Buat desain report sekreatif kita, klik preview untuk mendapatkan file versi .ja
 ### 10. Source code untuk button Register pada frame LoginPage
 
    private void lblRegistMouseClicked(java.awt.event.MouseEvent evt) {                                       
+        
         Regist akunbaru = new Regist();
+        
         akunbaru.setVisible(true);
+        
         this.dispose();
     }                      
     
