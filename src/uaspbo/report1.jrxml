@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7cf54b1d-f1c9-45cb-a9f5-c36be76c5b40">
+	<property name="ireport.zoom" value="1.3310000000000004"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM Mahasiswa]]>
+	</queryString>
+	<field name="nim" class="java.lang.String"/>
+	<field name="nama" class="java.lang.String"/>
+	<field name="alamat" class="java.lang.String"/>
+	<field name="asalsma" class="java.lang.String"/>
+	<field name="namaorangtua" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="86" splitType="Stretch">
+			<image>
+				<reportElement x="51" y="0" width="89" height="83" uuid="84cd4bfd-a42e-4670-87d4-0e923c722786"/>
+				<imageExpression><![CDATA["C:\\Users\\USER\\Pictures\\Screenshots\\UTS\\UIN Sunan Ampel Logo (KoleksiLogo.com).png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="413" y="0" width="90" height="86" uuid="8fdb365d-dc04-427f-80a2-e59a4d45f17a"/>
+				<imageExpression><![CDATA["C:\\Users\\USER\\Pictures\\Screenshots\\UTS\\LOGO HIMAPROSIF.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="140" y="22" width="273" height="31" uuid="5b407bd9-bbca-4eed-8605-be269ff4251f"/>
+				<textElement textAlignment="Center">
+					<font fontName="Lucida Bright" size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DATA MAHASISWA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="140" y="53" width="273" height="17" uuid="ed7a1d87-dd74-4468-8f49-6acb08417791"/>
+				<textElement textAlignment="Center">
+					<font fontName="Lucida Bright" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Program Studi Sistem Informasi]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="14" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="22" splitType="Stretch">
+			<rectangle>
+				<reportElement x="24" y="0" width="500" height="22" forecolor="#FFFFFF" backcolor="#B9B27A" uuid="4fadfb2b-066f-4dfd-871f-e9536cca695c"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="124" y="0" width="100" height="20" uuid="5b7321a9-1107-466e-92c5-2bc98db48481"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NIM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="24" y="0" width="100" height="20" uuid="c215ce91-c272-444a-8e33-d7f36f1d8418"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nama]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="224" y="0" width="100" height="20" uuid="cb331ac7-13c5-45b0-bc54-79c779e2d5f2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Alamat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="324" y="0" width="100" height="20" uuid="fc67c0e3-9f67-4651-8331-01b60dd00750"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Asal SMA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="424" y="0" width="100" height="20" uuid="d7510d0c-4d74-42cb-812c-8fd8dca38f32"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Orang Tua]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="124" y="0" width="100" height="20" uuid="55c646eb-7fbf-45a5-a5fe-78ff105879a5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{nim}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="24" y="0" width="100" height="20" uuid="81d580db-f22b-41db-9eab-074f151c073e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{nama}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="224" y="0" width="100" height="20" uuid="4317ea67-83ef-420e-91bc-ca2daa1848d7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{alamat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="324" y="0" width="100" height="20" uuid="3acbd172-7988-427c-86e6-d9b478e00c00"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{asalsma}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="424" y="0" width="100" height="20" uuid="9db0543d-8a29-4391-b6fa-6dea06fb45e9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{namaorangtua}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
